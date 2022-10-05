@@ -10,8 +10,7 @@ body {
     user-select: none;
 }
 
-.overlay,
-.overlay-restart {
+.overlay {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -25,8 +24,7 @@ body {
     display: none;
 }
 
-.overlay .start,
-.restart {
+.overlay .start {
     width: 200px;
     position: absolute;
     left: 50%;
@@ -43,7 +41,17 @@ body {
 }
 
 .restart {
-    /* display: none; */
+    width: 500px;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    background-color: #03a9f4;
+    color: white;
+    cursor: pointer;
+    display: none;
 }
 
 .container {

@@ -1,157 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memory Game</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
 
-<body>
-    <div class="overlay">
-        <div class="start">Start Game</div>
-    </div>
-    <div class="overlay-restart">
-        <div class="restart">Restart Game</div>
-    </div>
-    <div class="container ">
-        <header>
-            <p>Hello:
-                <span class="name"></span>
-            </p>
-            <p>Wrong tries:
-                <span class="tries">0</span>
-            </p>
-        </header>
-        <main class="memory-container">
-            <div class="card" data-id='css'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/css3.png" alt="">
+    <body>
+        <div class="overlay">
+            <div class="start">Start Game</div>
+        </div>
+        <div class="container ">
+            <header>
+                <p>Hello:
+                    <span class="name"></span>
+                </p>
+                <p>Wrong tries:
+                    <span class="tries">0</span>
+                </p>
+            </header>
+            <main class="memory-container">
+                <div class="card" data-id='css'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/css3.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='css'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/css3.png" alt="">
+                <div class="card" data-id='css'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/css3.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='github'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/github.png" alt="">
+                <div class="card" data-id='github'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/github.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='github'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/github.png" alt="">
+                <div class="card" data-id='github'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/github.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='html5'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/html5.png" alt="">
+                <!-- <div class="card" data-id='html5'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/html5.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='html5'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/html5.png" alt="">
+                <div class="card" data-id='html5'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/html5.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='java'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/java.png" alt="">
+                <div class="card" data-id='java'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/java.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='java'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/java.png" alt="">
+                <div class="card" data-id='java'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/java.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='javascript'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/javascript.png" alt="">
+                <div class="card" data-id='javascript'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/javascript.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='javascript'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/javascript.png" alt="">
+                <div class="card" data-id='javascript'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/javascript.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='linux'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/linux.png" alt="">
+                <div class="card" data-id='linux'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/linux.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='linux'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/linux.png" alt="">
+                <div class="card" data-id='linux'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/linux.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='mysql'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/mysql.png" alt="">
+                <div class="card" data-id='mysql'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/mysql.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='mysql'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/mysql.png" alt="">
+                <div class="card" data-id='mysql'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/mysql.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='node-js'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/node-js.png" alt="">
+                <div class="card" data-id='node-js'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/node-js.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='node-js'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/node-js.png" alt="">
+                <div class="card" data-id='node-js'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/node-js.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='react'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/react.png" alt="">
+                <div class="card" data-id='react'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/react.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='react'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/react.png" alt="">
+                <div class="card" data-id='react'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/react.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='typescript'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/typescript.png" alt="">
+                <div class="card" data-id='typescript'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/typescript.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" data-id='typescript'>
-                <div class="front face"></div>
-                <div class="back face">
-                    <img src="imgs/typescript.png" alt="">
-                </div>
-            </div>
-        </main>
-        <section class="scores">
-            <h2>Scoreboard</h2>
-        </section>
-    </div>
-    <script src="main.js"></script>
-</body>
+                <div class="card" data-id='typescript'>
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="imgs/typescript.png" alt="">
+                    </div>
+                </div> -->
+            </main>
+            <div class="restart">Restart Game</div>
+            <section class="scores">
+                <h2>Scoreboard</h2>
+            </section>
+        </div>
+        <script src="main.js"></script>
+    </body>
 
 </html>
