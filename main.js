@@ -1,3 +1,34 @@
+// The score div that we will use to append the score of each one from the localstorage
+let mainScoreDiv = document.querySelector(".scores");
+
+// Function of creating sub-divs that has the name and successes after how many tries
+function creatingDiv(userName, userTries) {
+    // Creating the main div that will hold the name and the score
+    let scoreDiv = document.createElement("div");
+    scoreDiv.className = "score";
+
+    // Creating the h3 that will hold the user name
+    let name = document.createElement("h3");
+    name.appendChild(document.createTextNode(`Hello: ${userName}`));
+
+    // The paragraph that will hold the number of tries of each user name
+    let myPTries = document.createElement("p");
+    myPTries.appendChild(document.createTextNode("Succeeded after: "));
+
+    // The span that will hold the number of the tries
+    let myTriesSpan = document.createElement("span");
+    myTriesSpan.className = "score-tries";
+    myTriesSpan.appendChild(document.createTextNode(`${userTries} tries`));
+
+    // Appending all the elements inside the main div
+    myPTries.appendChild(myTriesSpan);
+
+    scoreDiv.appendChild(name);
+    scoreDiv.appendChild(myPTries);
+
+    mainScoreDiv.appendChild(scoreDiv);
+}
+// Here we declare the duration that the cards will consume while its faces up before turning back again
 let duration = 1000;
 
 // Getting the name from the user
@@ -15,6 +46,8 @@ let startBtn = document.querySelector(".start");
 // Once we click on the button, the overlay will be removed
 startBtn.onclick = () => {
     startBtn.parentElement.remove();
+
+    creatingDiv();
 };
 
 // Here it is an empty array to store the indexes inside
@@ -128,3 +161,10 @@ function stopClicking() {
             .classList.remove("no-clicking");
     }, duration);
 }
+
+let userData = [
+    {
+        userName: yourName,
+        numOfTries: document.querySelector(".tries").innerHTML,
+    },
+];
