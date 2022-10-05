@@ -83,6 +83,13 @@ let i = 0;
 
 let restartBtn = document.querySelector(".restart");
 
+let userData = [
+  {
+    userName: yourName,
+    numOfTries: document.querySelector(".tries").innerHTML,
+  },
+];
+
 cards.forEach((element) => {
   // each element will take an order according from the shuffled array which is indexArray
   element.style.order = indexArray[i];
@@ -158,12 +165,3 @@ function stopClicking() {
     document.querySelector(".memory-container").classList.remove("no-clicking");
   }, duration);
 }
-
-let userData = [
-  {
-    userName: yourName,
-    numOfTries: document.querySelector(".tries").innerHTML,
-  },
-];
-
-window.localStorage.clear();
