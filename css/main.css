@@ -10,7 +10,8 @@ body {
     user-select: none;
 }
 
-.overlay {
+.overlay,
+.overlay-restart {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -18,6 +19,10 @@ body {
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
+}
+
+.overlay-restart {
+    display: none;
 }
 
 .overlay .start,
@@ -38,7 +43,7 @@ body {
 }
 
 .restart {
-    display: none;
+    /* display: none; */
 }
 
 .container {
@@ -66,7 +71,8 @@ body {
     flex-wrap: wrap;
 }
 
-.memory-container.no-clicking {
+.memory-container.no-clicking,
+.container .memory-container .card.no-clicking {
     pointer-events: none;
 }
 
